@@ -1,0 +1,24 @@
+h2 {
+  font-size: 22px;
+  font-weight: 800;
+}
+
+#sourdough {
+  height: 500px;
+  aspect-ratio: 1 / 1;
+  box-shadow: -8px 8px 0px var(--secondary);
+  border: 1px solid var(--shadow);
+  border-radius: 2px;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  margin: 2em;
+  gap: 8px;
+  p {
+    padding: 0 1em;
+  }
+}
