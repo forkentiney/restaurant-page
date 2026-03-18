@@ -163,7 +163,7 @@ footer {
 }
 
 @media screen and (max-width: 500px) {
-  footer {
+  #back-matter {
     grid-template-columns: 1fr;
   }
   #license,
