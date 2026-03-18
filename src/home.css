@@ -18,6 +18,7 @@ h2 {
   text-align: justify;
   margin: 2em;
   gap: 8px;
+  width: 50vw;
   p {
     padding: 0 1em;
   }
