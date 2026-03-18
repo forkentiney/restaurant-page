@@ -2,8 +2,8 @@
 
 <html lang="en">
   <head>
-	  <meta http-equiv="content-type" name="viewport" content="text/html; charset=utf-8; width=device-width, initial-scale=1" />
-	  <title>CJ's Bakery</title>
+	  <meta http-equiv="content-type" name="viewport" content="text/html; charset="utf-8"; width=device-width, initial-scale=1" />
+	  <title>Bouquet Breads & Bakes</title>
 	  <link rel="icon" type="image/png" href="static/fav.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,21 +12,54 @@
 
   <body>
     <header>
-      <h1>Bouquet Bakes & Breads</h1>
+      <div id="title" class="flex-v-centered-row">
+        <img src="static/images/flowers.png">
+        <h1>Bouquet Breads & Bakes</h1>
+        <img style="transform: rotate(180deg);" src="static/images/flowers.png">
+      </div>
       <nav>
         <button id="home">home</button>
-        <button id="menu">menu</button>
+        <button id="bakes">menu</button>
+        <button id="photos">photo gallery</button>
         <button id="about">about</button>
+        <button id="contact">contact</button>
       </nav>
     </header>
 
     <div id="content">
-      <div class="card">
-        <div>
-          <h2>Sourdough</h2>
-          <p>...is what brought our bread making abilities to greater heights. Made with a high quality starter that is over five years old, our bread comes out perfectly every time. And when it doesn't, we're still happy to eat it.</p>
+      <div id="landing" class="flex-h-centered-row">
+        <img class="hero" src="static/images/bagels.webp" alt="bagels">
+        <img class="hero" src="static/images/sourdough.webp" alt="sourdough">
+      </div>
+      <div id="origin" class="flex-centered">
+        <h2>Made With Love</h2>
+        <p>We are based out of our home kitchens in Grand Forks, North Dakota. Two self taught bakers driven by a passion for baking and an enjoyment of good food!</p>
+      </div>
+      <div id="specialties">
+        <h3>Specialties</h3>
+        <div id="specialty-content">
+          <div class="flex-v-centered-row">
+          <p>img</p>
+          <div id="sourdough" class="card">
+            <h4>Sourdough</h4>
+            <p>Made with prime sourdough starter (named Florentine) and high quality King Arthur bread flour, our sourdough bakes are a must-have!</p>
+          </div>
+          </div>
+          <div class="flex-v-centered-row">
+          <p>img</p>
+          <div id="bagels" class="card">
+            <h4>New York Style Bagels</h4>
+            <p>Proofed, rolled, boiled, baked! Our hand crafted bagels have the same chew interior and crusty exterior reminiscent of a bagel right out of NYC!</p>
+          </div>
+          </div>
+          <div class="flex-v-centered-row">
+          <p>img</p>
+          <div id="extras" class="card">
+            <h4>Complimentary Additions</h4>
+            <p>Our classic pesto, "Oma's Recipe" strawberry jam, and our expertly developed everything bagel seasoning are perfect pairs to our baked bread products!</p>
+          </div>
+          </div>
         </div>
-        <img id="sourdough" src="static/images/sourdough.webp" alt="sourdough">
       </div>
     </div>
 
@@ -34,6 +67,7 @@
       <div id="credit" class="flex-centered">
         <p>Joshua Severud</p>
         <a href="https://github.com/forkentiney/restaurant-page/" target="_blank"><img class="icon" src="static/images/icons/github-mark.svg" alt="Github"></a>
+        <a href="https://www.vecteezy.com/free-png/flower" target="_blank">Flower PNGs by Vecteezy</a>
       </div>
       <div id="socials" class="flex-centered">
         <p>find me other places</p>
