@@ -78,6 +78,10 @@ h3 {
   }
 }
 
+.flower {
+  max-width: 8ch;
+}
+
 #sourdough,
 #bagels,
 #extras {
