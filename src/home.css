@@ -107,4 +107,7 @@ h3 {
   .hero {
     width: 60vw;
   }
+  .flower {
+    display: none;
+  }
 }
