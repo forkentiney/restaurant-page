@@ -1,0 +1,66 @@
+import "./about.css";
+import clairePhoto from "./static/images/claire.webp";
+import joshuaPhoto from "./static/images/joshua.webp";
+
+function createAbout() {
+  console.log("Creating about");
+
+  // Create profiles section 
+  const profiles = document.createElement("div");
+  profiles.setAttribute("id", "profiles");
+  profiles.classList.add("flex-h-centered-row");
+
+  // Create Claire's profile
+  const claire = document.createElement("div");
+  claire.setAttribute("id", "claire");
+  claire.classList.add("profile");
+  const claireProfile = document.createElement("img");
+  claireProfile.classList.add("profile-pic");
+  claireProfile.src = clairePhoto;
+  claireProfile.alt = "claire";
+  const claireProfileTitle = document.createElement("h2");
+  claireProfileTitle.textContent = "Claire";
+  const claireProfileBody = document.createElement("p");
+  claireProfileBody.textContent = "Information about Claire";
+
+  // Create Joshua's profile
+  const joshua = document.createElement("div");
+  joshua.setAttribute("id", "joshua");
+  joshua.classList.add("profile");
+  const joshuaProfile = document.createElement("img");
+  joshuaProfile.classList.add("profile-pic");
+  joshuaProfile.src = joshuaPhoto;
+  joshuaProfile.alt = "joshua";
+  const joshuaProfileTitle = document.createElement("h2");
+  joshuaProfileTitle.textContent = "Joshua";
+  const joshuaProfileBody = document.createElement("p");
+  joshuaProfileBody.textContent = "Information about Joshua";
+
+  // Create about section
+  const about = document.createElement("div");
+  about.setAttribute("id", "about");
+  const aboutTitle = document.createElement("h1");
+  aboutTitle.textContent = "About Us";
+  const aboutBody = document.createElement("p");
+  aboutBody.textContent = "Everything has a story and so does our bakery. It all started in Minneapolis where we developed a healthy habit for a breakfast composed of two eggs on buttered (or avocado'd) toast served with half of a Trader Joe's bagel with cream cheese and everything bagel seasoning. When Claire came back from Minneapolis and we were left without a Trader Joe's, something had to be done. We started with bagels and eventually progressed to sourdough once we got our hands on some starter. Through trial and error we have developed both of these bakes to meet our standards and our breakfasts have not been the only thing to benefit from these developments."
+
+  // Place profiles section 
+  content.appendChild(profiles);
+  profiles.appendChild(claire);
+  profiles.appendChild(joshua);
+
+  claire.appendChild(claireProfile);
+  claire.appendChild(claireProfileTitle);
+  claire.appendChild(claireProfileBody);
+
+  joshua.appendChild(joshuaProfile);
+  joshua.appendChild(joshuaProfileTitle);
+  joshua.appendChild(joshuaProfileBody);
+
+  // Place about section
+  content.appendChild(about);
+  about.appendChild(aboutTitle);
+  about.appendChild(aboutBody);
+};
+
+export { createAbout };
