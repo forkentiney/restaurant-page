@@ -129,7 +129,7 @@ footer {
 
 #big-logo {
   margin: 64px;
-  width: 25vw;
+  width: clamp(48px, 256px, 25vw);
   height: auto;
   align-self: center;
   border: 4px solid var(--primary);
