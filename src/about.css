@@ -16,7 +16,7 @@
   margin: 12px;
 }
 
-#about {
+#aboutSection {
   display: flex;
   flex-direction: column;
   align-self: center;

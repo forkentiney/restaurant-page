@@ -37,8 +37,8 @@ function createAbout() {
   joshuaProfileBody.textContent = "Information about Joshua";
 
   // Create about section
-  const about = document.createElement("div");
-  about.setAttribute("id", "about");
+  const aboutSection = document.createElement("div");
+  aboutSection.setAttribute("id", "aboutSection");
   const aboutTitle = document.createElement("h1");
   aboutTitle.textContent = "About Us";
   const aboutBody = document.createElement("p");
@@ -58,9 +58,9 @@ function createAbout() {
   joshua.appendChild(joshuaProfileBody);
 
   // Place about section
-  content.appendChild(about);
-  about.appendChild(aboutTitle);
-  about.appendChild(aboutBody);
+  content.appendChild(aboutSection);
+  aboutSection.appendChild(aboutTitle);
+  aboutSection.appendChild(aboutBody);
 };
 
 export { createAbout };
