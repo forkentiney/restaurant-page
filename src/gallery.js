@@ -7,54 +7,41 @@ import pic5 from "./static/images/cookies4.webp";
 import pic6 from "./static/images/cookies-close-up.webp";
 import pic7 from "./static/images/cookies-hand.webp";
 import pic8 from "./static/images/cookies-top.webp";
+import pic9 from "./static/images/bagels.webp";
+import pic10 from "./static/images/brioche1.webp";
+import pic11 from "./static/images/brioche2.webp";
+import pic12 from "./static/images/brioche3.webp";
+import pic13 from "./static/images/cinnamon-rolls1.webp";
+import pic14 from "./static/images/dough1.webp";
+import pic15 from "./static/images/gyros1.webp";
+import pic16 from "./static/images/picnic1.webp";
+import pic17 from "./static/images/pita1.webp";
+import pic18 from "./static/images/pita2.webp";
+import pic19 from "./static/images/pita3.webp";
+import pic20 from "./static/images/pita4.webp";
+import pic21 from "./static/images/sourdough.webp";
+import pic22 from "./static/images/sourdough1.webp";
+import pic23 from "./static/images/sourdough2.webp";
+import pic24 from "./static/images/sourdough3.webp";
 
 function createGallery() {
   console.log("Creating gallery");
 
+  const images = [pic1, pic2, pic3, pic4, pic5, pic6, pic7, pic8, pic9, pic10, pic11, pic12, pic13, pic14, pic15, pic16, pic17, pic18, pic19, pic20, pic21, pic22, pic23, pic24,];
+
+  // Create and place gallery container
   const gallery = document.createElement("div");
   gallery.setAttribute("id", "gallery");
-  const cookie1 = document.createElement("img");
-  cookie1.classList.add("gallery-pic");
-  cookie1.src = pic1;
-  cookie1.alt = "cookies";
-  const cookie2 = document.createElement("img");
-  cookie2.classList.add("gallery-pic");
-  cookie2.src = pic2;
-  cookie2.alt = "cookies";
-  const cookie3 = document.createElement("img");
-  cookie3.classList.add("gallery-pic");
-  cookie3.src = pic3;
-  cookie3.alt = "cookies";
-  const cookie4 = document.createElement("img");
-  cookie4.classList.add("gallery-pic");
-  cookie4.src = pic4;
-  cookie4.alt = "cookies";
-  const cookie5 = document.createElement("img");
-  cookie5.classList.add("gallery-pic");
-  cookie5.src = pic5;
-  cookie5.alt = "cookies";
-  const cookie6 = document.createElement("img");
-  cookie6.classList.add("gallery-pic");
-  cookie6.src = pic6;
-  cookie6.alt = "cookies";
-  const cookie7 = document.createElement("img");
-  cookie7.classList.add("gallery-pic");
-  cookie7.src = pic7;
-  cookie7.alt = "cookies";
-  const cookie8 = document.createElement("img");
-  cookie8.classList.add("gallery-pic");
-  cookie8.src = pic8;
-  cookie8.alt = "cookies";
-
   content.appendChild(gallery);
-  gallery.appendChild(cookie1);
-  gallery.appendChild(cookie2);
-  gallery.appendChild(cookie3);
-  gallery.appendChild(cookie4);
-  gallery.appendChild(cookie5);
-  gallery.appendChild(cookie6);
-  gallery.appendChild(cookie7);
-  gallery.appendChild(cookie8);
+
+  images.forEach((image) => {
+    const galleryPhoto = document.createElement("img");
+    galleryPhoto.src = image;
+    galleryPhoto.alt = "Baked good";
+    galleryPhoto.classList.add("gallery-pic");
+
+    gallery.appendChild(galleryPhoto);
+  })
 
   enlargeImage();
 };
