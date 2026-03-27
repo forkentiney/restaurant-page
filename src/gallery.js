@@ -55,6 +55,15 @@ function createGallery() {
   gallery.appendChild(cookie6);
   gallery.appendChild(cookie7);
   gallery.appendChild(cookie8);
+
+  enlargeImage();
+};
+
+function enlargeImage() {
+  const galleryPhotos = document.querySelectorAll(".gallery-pic");
+  galleryPhotos.forEach((image) => image.addEventListener("click", function() {
+    this.classList.toggle("full-size");
+  }));
 }
 
 export { createGallery };
