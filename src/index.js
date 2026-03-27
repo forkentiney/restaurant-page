@@ -1,6 +1,7 @@
 import "./template.css";
 import { createHome } from "./home.js";
 import { createAbout } from "./about.js";
+import { createGallery } from "./gallery.js";
 
 const home = document.querySelector("#home");
 const bakes = document.querySelector("#menu");
@@ -16,6 +17,11 @@ home.addEventListener("click", () => {
 about.addEventListener("click", () => {
   clearContent();
   createAbout();
+})
+
+photos.addEventListener("click", () => {
+  clearContent();
+  createGallery();
 })
 
 function clearContent() {
