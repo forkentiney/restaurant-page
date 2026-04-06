@@ -14,6 +14,7 @@ function createAbout() {
   const claire = document.createElement("div");
   claire.setAttribute("id", "claire");
   claire.classList.add("profile");
+  claire.classList.add("flex-centered");
   const claireProfile = document.createElement("img");
   claireProfile.classList.add("profile-pic");
   claireProfile.src = clairePhoto;
@@ -27,6 +28,7 @@ function createAbout() {
   const joshua = document.createElement("div");
   joshua.setAttribute("id", "joshua");
   joshua.classList.add("profile");
+  joshua.classList.add("flex-centered");
   const joshuaProfile = document.createElement("img");
   joshuaProfile.classList.add("profile-pic");
   joshuaProfile.src = joshuaPhoto;
