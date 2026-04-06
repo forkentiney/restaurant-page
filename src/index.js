@@ -2,12 +2,14 @@ import "./template.css";
 import { createHome } from "./home.js";
 import { createAbout } from "./about.js";
 import { createGallery } from "./gallery.js";
+import { createContact } from "./contact.js";
 
+const content = document.querySelector("#content");
 const home = document.querySelector("#home");
 const bakes = document.querySelector("#menu");
 const photos = document.querySelector("#photos");
 const about = document.querySelector("#about");
-const content = document.querySelector("#content");
+const contact = document.querySelector("#contact");
 
 home.addEventListener("click", () => {
   clearContent();
@@ -17,12 +19,17 @@ home.addEventListener("click", () => {
 about.addEventListener("click", () => {
   clearContent();
   createAbout();
-})
+});
 
 photos.addEventListener("click", () => {
   clearContent();
   createGallery();
-})
+});
+
+contact.addEventListener("click", () => {
+  clearContent();
+  createContact();
+});
 
 function clearContent() {
   console.log("Clearing body");
