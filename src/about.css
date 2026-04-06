@@ -6,6 +6,11 @@
   }
 }
 
+#claire,
+#joshua {
+  align-self: flex-start;
+}
+
 .profile {
   text-align: center;
 }
