@@ -1,6 +1,9 @@
 #profiles {
   flex-wrap: wrap;
   gap: 12em;
+  p {
+    width: clamp(290px, 20vw, 30vw);
+  }
 }
 
 .profile {
