@@ -15,7 +15,7 @@ h3 {
 }
 
 .hero {
-  width: 38vw;
+  width: clamp(20vw, 400px, 30vw);
   align-self: flex-start;
   aspect-ratio: 1 / 1;
   box-shadow: -8px 8px 0px var(--secondary);
@@ -47,7 +47,7 @@ h3 {
 
 #landing {
   flex-wrap: wrap;
-  justify-content: space-around;
+  gap: 15vw;
   padding: 0 8px;
   min-height: 55vh;
 }
