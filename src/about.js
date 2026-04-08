@@ -22,7 +22,7 @@ function createAbout() {
   const claireProfileTitle = document.createElement("h2");
   claireProfileTitle.textContent = "Claire";
   const claireProfileBody = document.createElement("p");
-  claireProfileBody.textContent = "Information about Claire";
+  claireProfileBody.textContent = "Claire is our resident bagel expert and spends her time before the Farmer’s Market rolling and boiling bagel after bagel. Claire also plans all our flavours for bagel toppings and cookies alike. Her specialty is granola which she enjoys with vanilla ice cream. She is anticipating attending a master’s program in Ottawa.";
 
   // Create Joshua's profile
   const joshua = document.createElement("div");
@@ -36,7 +36,7 @@ function createAbout() {
   const joshuaProfileTitle = document.createElement("h2");
   joshuaProfileTitle.textContent = "Joshua";
   const joshuaProfileBody = document.createElement("p");
-  joshuaProfileBody.textContent = "Joshua specializes in our sourdough and makes all the dough in the days preceding the Farmer’s Market. All the bread is baked fresh in the wee hours of the morning. In addition to breads, Joshua has a master’s in philosophy and has just finished the school year where he taught 8th grade English at GFPS and philosophy at Minot State University. He is currently working on learning web development. More information can be found ";
+  joshuaProfileBody.textContent = "Joshua specializes in our sourdough and makes all the dough in the days preceding the Farmer’s Market. All the bread is baked fresh in the wee hours of the morning. In addition to breads, Joshua has a master’s in philosophy and spends the school year teaching. He is currently working on learning web development. More information can be found ";
   const link = document.createElement("a");
   link.setAttribute("href", "https://www.joshuaseverud.com/");
   link.setAttribute("target", "_blank");

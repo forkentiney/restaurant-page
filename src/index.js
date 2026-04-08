@@ -3,10 +3,11 @@ import { createHome } from "./home.js";
 import { createAbout } from "./about.js";
 import { createGallery } from "./gallery.js";
 import { createContact } from "./contact.js";
+import { createMenu } from "./menu.js";
 
 const content = document.querySelector("#content");
 const home = document.querySelector("#home");
-const bakes = document.querySelector("#menu");
+const menu = document.querySelector("#bakes");
 const photos = document.querySelector("#photos");
 const about = document.querySelector("#about");
 const contact = document.querySelector("#contact");
@@ -29,6 +30,11 @@ photos.addEventListener("click", () => {
 contact.addEventListener("click", () => {
   clearContent();
   createContact();
+});
+
+menu.addEventListener("click", () => {
+  clearContent();
+  createMenu();
 });
 
 function clearContent() {

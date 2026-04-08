@@ -1,0 +1,15 @@
+.menu-item {
+  max-width: 400px;
+  text-align: center;
+  margin: 48px 0;
+  p {
+    font-family: "EB Garamond", serif;
+    font-size: 22px;
+  }
+}
+
+#menu h1 {
+  color: var(--text);
+  font-variant: small-caps;
+  border-bottom: 2px solid var(--shadow);
+}
