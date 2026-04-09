@@ -6,13 +6,9 @@
   }
 }
 
-#claire,
-#joshua {
-  align-self: flex-start;
-}
-
 .profile {
   text-align: center;
+  align-self: flex-start;
 }
 
 .profile-pic {
