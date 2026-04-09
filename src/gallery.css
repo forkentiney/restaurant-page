@@ -6,6 +6,13 @@
   padding: 12px;
 }
 
+.column {
+  display: flex;
+  flex-direction: column;
+  width: clamp(20vw, 400px, 90vw);
+  gap: 24px;
+}
+
 .gallery-pic {
   width: 100%;
   height: auto;

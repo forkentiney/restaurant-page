@@ -29,19 +29,31 @@ function createGallery() {
 
   const images = [pic1, pic2, pic3, pic4, pic5, pic6, pic7, pic8, pic9, pic10, pic11, pic12, pic13, pic14, pic15, pic16, pic17, pic18, pic19, pic20, pic21, pic22, pic23, pic24,];
 
+  // The number that images.length is divided by
+  // determines the number of columns displayed.
+  // To find the appropriate number of columns for
+  // a screen, we divide the screen width by the
+  // optimal width of the images as defined in the CSS.
+  const chunkSize = images.length / Math.floor(innerWidth / 400);
+
   // Create and place gallery container
   const gallery = document.createElement("div");
   gallery.setAttribute("id", "gallery");
   content.appendChild(gallery);
 
-  images.forEach((image) => {
-    const galleryPhoto = document.createElement("img");
-    galleryPhoto.src = image;
-    galleryPhoto.alt = "Baked good";
-    galleryPhoto.classList.add("gallery-pic");
-
-    gallery.appendChild(galleryPhoto);
-  })
+  for (let i = 0; i < images.length; i += chunkSize) {
+    const chunk = images.slice(i, i + chunkSize);
+    const column = document.createElement("div");
+    column.classList.add("column");
+    gallery.appendChild(column);
+    chunk.forEach((image) => {
+      const galleryPhoto = document.createElement("img");
+      galleryPhoto.src = image;
+      galleryPhoto.alt = "Baked good";
+      galleryPhoto.classList.add("gallery-pic");
+      column.appendChild(galleryPhoto);
+    });
+  };
 
   enlargeImage();
 };
