@@ -41,6 +41,11 @@ function createGallery() {
 
   // Create and place gallery container
   const gallery = document.createElement("div");
+	// This is a quick and dirty solution to page jumps on mobile.
+	// It should be refined through conditionals to account for other page sizes
+	// which may also experience page jumps. 
+	const minHeight = chunkSize * 380;
+	gallery.style.minHeight = `${minHeight}px`;
   gallery.setAttribute("id", "gallery");
   content.appendChild(gallery);
 
