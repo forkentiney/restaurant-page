@@ -23,11 +23,14 @@ import pic21 from "./static/images/sourdough.webp";
 import pic22 from "./static/images/sourdough1.webp";
 import pic23 from "./static/images/sourdough2.webp";
 import pic24 from "./static/images/sourdough3.webp";
+import pic25 from "./static/images/market-1.webp";
+import pic26 from "./static/images/market-2.webp";
+import pic27 from "./static/images/market-3.webp";
 
 function createGallery() {
   console.log("Creating gallery");
 
-  const images = [pic1, pic2, pic3, pic4, pic5, pic6, pic7, pic8, pic9, pic10, pic11, pic12, pic13, pic14, pic15, pic16, pic17, pic18, pic19, pic20, pic21, pic22, pic23, pic24,];
+  const images = [pic1, pic2, pic3, pic4, pic5, pic6, pic7, pic8, pic9, pic10, pic11, pic12, pic13, pic14, pic15, pic16, pic17, pic18, pic19, pic20, pic21, pic22, pic23, pic24, pic25, pic26, pic27,];
 
   // The number that images.length is divided by
   // determines the number of columns displayed.
@@ -55,14 +58,15 @@ function createGallery() {
     });
   };
 
-  enlargeImage();
+  //enlargeImage();
 };
 
-function enlargeImage() {
-  const galleryPhotos = document.querySelectorAll(".gallery-pic");
-  galleryPhotos.forEach((image) => image.addEventListener("click", function() {
-    this.classList.toggle("full-size");
-  }));
-}
+// Broken on multiple clicks, doesn't add real value anyway
+//function enlargeImage() {
+//  const galleryPhotos = document.querySelectorAll(".gallery-pic");
+//  galleryPhotos.forEach((image) => image.addEventListener("click", function() {
+//    this.classList.toggle("full-size");
+//  }));
+//}
 
 export { createGallery };

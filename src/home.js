@@ -1,6 +1,6 @@
 import "./home.css";
-import bagelsPhoto from "./static/images/bagels.webp";
-import sourdoughPhoto from "./static/images/sourdough.webp";
+import bagelsPhoto from "./static/images/bagels_film.webp";
+import sourdoughPhoto from "./static/images/sourdough_film.webp";
 import pinkFlowerPhoto from "./static/images/pink-flower.png";
 import purpleFlowerPhoto from "./static/images/purple-flower.png";
 import yellowFlowerPhoto from "./static/images/yellow-flower.png";
@@ -83,9 +83,9 @@ function createHome() {
   extrasCard.setAttribute("id", "extras");
   extrasCard.classList.add("card");
   const extrasCardTitle = document.createElement("h4");
-  extrasCardTitle.textContent = "Complimentary Additions";
+  extrasCardTitle.textContent = "Additions";
   const extrasCardBody = document.createElement("p");
-  extrasCardBody.textContent = "Our classic pesto, \"Oma\'s Recipe\" strawberry jam, and our expertly developed everything bagel seasoning are perfect pairs to our baked bread products!"
+  extrasCardBody.textContent = "Our expertly developed everything bagel seasoning make a perfect topping, and our chocolate chip brioche will satisfy your sweet toooth!"
 
   // Place specialties section
   content.appendChild(specialties);

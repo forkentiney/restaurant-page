@@ -9,9 +9,9 @@ function createItem(item, description) {
 const sourdough = createItem("Sourdough", "Starter, flour, water, salt. Simple and effective.");
 const bagels = createItem("Bagels", "Made to emulate the classic NYC bagel, our dough is boiled and baked into an easily recognizable shape.");
 const granola = createItem("Granola", "Oaty and nutty, a perfect match for your daily yogurt or ice cream.");
-const cookies = createItem("Cookies", "Sweet and perfectly baked, share these cookies with your friends and family or eat them alone. We don't judge.");
+const brioche = createItem("Chocolate Chip Brioche", "Chocolatey and sweet, we are confident you'll like it when you try it.");
 
-const menuItems = [sourdough, bagels, granola, cookies,];
+const menuItems = [sourdough, bagels, granola, brioche,];
 
 function createMenu() {
   console.log("Creating menu");
